@@ -1,0 +1,3 @@
+[submodule "vendor/UUID"]
+	path = vendor/UUID
+	url = https://github.com/onthegrid007/UUID
