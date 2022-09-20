@@ -1,3 +1,6 @@
 [submodule "vendor/UUID"]
 	path = vendor/UUID
 	url = https://github.com/onthegrid007/UUID
+[submodule "vendor/Timestamp"]
+	path = vendor/Timestamp
+	url = https://github.com/onthegrid007/Timestamp
