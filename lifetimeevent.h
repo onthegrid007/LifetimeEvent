@@ -19,7 +19,7 @@ class LifetimeEvent {
     };
     
     private:
-    std::string* m_plainTextReason;
+    std::string* m_plainTextReason = 0;
     
     protected:
     UUID m_ownerUUID;
