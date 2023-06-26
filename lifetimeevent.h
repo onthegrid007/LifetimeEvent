@@ -1,8 +1,9 @@
 #ifndef LIFETIMEEVENT_HPP_
 #define LIFETIMEEVENT_HPP_
 
-#include "vendor/UUID/UUID.h"
-#include "vendor/Timestamp/timestamp.hpp"
+#include "vendor/UUID/UUID.hpp"
+// #include "vendor/Timestamp/timestamp.hpp"
+#include <string>
 
 class LifetimeEvent {
     public:
@@ -19,11 +20,11 @@ class LifetimeEvent {
     };
     
     private:
-    std::string* m_plainTextReason = 0;
+    std::string* m_plainTextReason = nullptr;
     
     protected:
     UUID m_ownerUUID;
-    Timestamp m_timeStamp;
+    // Timestamp m_timeStamp;
 };
 
 #endif
