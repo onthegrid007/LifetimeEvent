@@ -7,10 +7,10 @@
 
 class LifetimeEvent {
     public:
-    LifetimeEvent(const UUID& uuid, const std::string plainTextMessage);
+    LifetimeEvent(const UUID_T& uuid, const std::string plainTextMessage);
     ~LifetimeEvent();
     operator std::string();
-    operator UUID();
+    operator UUID_T();
     
     enum EventLevel : char {
         ERROR = 0,
@@ -23,7 +23,7 @@ class LifetimeEvent {
     std::string* m_plainTextReason = nullptr;
     
     protected:
-    UUID m_ownerUUID;
+    UUID_T m_ownerUUID;
     // Timestamp m_timeStamp;
 };
 

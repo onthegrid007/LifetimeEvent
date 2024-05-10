@@ -1,6 +1,6 @@
 #include "lifetimeevent.h"
 
-LifetimeEvent::LifetimeEvent(const UUID& uuid, const std::string plainTextMessage) :
+LifetimeEvent::LifetimeEvent(const UUID_T& uuid, const std::string plainTextMessage) :
     m_ownerUUID(uuid),
     m_plainTextReason((plainTextMessage == "") ? 0 : new std::string(plainTextMessage)) {}
     
@@ -12,6 +12,6 @@ LifetimeEvent::operator std::string() {
     return ((!m_plainTextReason) ? "" : *m_plainTextReason);
 }
 
-LifetimeEvent::operator UUID() {
+LifetimeEvent::operator UUID_T() {
     return m_ownerUUID;
 }
